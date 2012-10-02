@@ -3,7 +3,7 @@
     PUBLIC "-//tuckey.org//DTD UrlRewrite 3.2//EN"
     "http://www.tuckey.org/res/dtds/urlrewrite3.2.dtd">
 <!-- Configuration file for UrlRewriteFilter http://www.tuckey.org/urlrewrite/ -->
-<urlrewrite>
+<urlrewrite use-query-string="true">
 
 	<rule>
 		<note>
@@ -22,13 +22,13 @@
 
 	<rule>
 		<from>/testWs/(.*)</from>
-		<to type="redirect">%{context-path}/tutu/$1</to>
+		<to type="redirect">%{context-path}/nouveauCtx/$1</to>
 	</rule>
 
 	<rule>
-		<note>On doit faire un changement de context !</note>
+		<note>On doit faire un changement de context + preserver query string</note>
 		<from>/tsvrWs/(.*)</from>
-		<to type="redirect">/tutu/ws.jsp?$1</to>
+		<to type="redirect" >/nouveauCtxRoot/$1</to>
 	</rule>
 
 	<rule>
