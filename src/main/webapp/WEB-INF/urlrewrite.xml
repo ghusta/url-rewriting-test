@@ -22,7 +22,7 @@
 
 	<rule>
 		<from>/testWs/(.*)</from>
-		<to type="redirect">%{context-path}/tutu/ws.jsp?$1</to>
+		<to type="redirect">%{context-path}/tutu/$1</to>
 	</rule>
 
 	<rule>
