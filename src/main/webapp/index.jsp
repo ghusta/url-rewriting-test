@@ -24,5 +24,6 @@
 
         <h2>Test WS hors context : (forward sur contexte externe)</h2>
         <a href="oldWs/MonService.wsdl">oldWs/MonService.wsdl</a>
+        
     </body>
 </html>
